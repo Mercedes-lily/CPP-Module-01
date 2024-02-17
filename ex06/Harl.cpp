@@ -2,6 +2,8 @@
 #include <iostream>
 #include <string>
 
+//TODO pourquoi pas de couleur
+
 void Harl::debug( void )
 {
 	std::cout <<  "\033[0;35mI love having extra bacon for my 7XL-double-cheese-triple-pickle-special-ketchup burger. I really do !" << std::endl;
@@ -59,7 +61,7 @@ void Harl::complain( std::string level)
 			(this->*functptr[0])();
 			break;
 		default:
-			std::cout << "[ Probably complaining about insignificant problems ]" << std::endl << std::endl;
+			std::cout << "\033[0;30m[ Probably complaining about insignificant problems ]" << std::endl << std::endl;
 			break;
 	}
 }

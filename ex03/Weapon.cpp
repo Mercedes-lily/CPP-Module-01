@@ -4,7 +4,6 @@
 Weapon::Weapon(std::string type) : _type(type)
 {
 	std::cout << "Weapon Constructor called" << std::endl;
-	std::cout << this << std::endl;
 }
 
 Weapon::~Weapon(void)

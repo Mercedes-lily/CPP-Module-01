@@ -4,9 +4,9 @@ int main()
 {
 	Zombie *Bobby;
 
-	randomChump("Patrick");
-	Bobby = newZombie("Bobby");
+	randomChump("Patrick"); //Wihout new
+	Bobby = newZombie("Bobby"); // With new
 	Bobby->announce();
-	delete Bobby;  //Destructor called;
+	delete Bobby;
 	return(0);
 }

@@ -6,14 +6,13 @@ CFLAGS = -Wall -Werror -Wextra -std=c++98
 OBJ_DIR = obj/
 
 SRCS =	main.cpp \
-		Files.cpp
 
 VPATH = $(OBJ_DIR)
 
 OBJS = $(SRCS:%.cpp=%.o)
 OBJ_PRE = $(addprefix $(OBJ_DIR), $(OBJS))
 
-DEP = Files.hpp
+DEP =
 
 all: $(NAME)
 

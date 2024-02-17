@@ -1,6 +1,8 @@
-#include "Files.hpp"
 #include <iostream>
+#include <fstream>
 #include <string>
+
+//TODO Check all case and segfault
 
 std::string find_replace(std::string readed, std::string s1, std::string s2)
 {
@@ -26,11 +28,13 @@ int main(int argc, char **argv)
 	newFile += ".replace";
 	if (argc != 4)
 	{
-		std::cout << "mmm... you need 3 arguments -file -string -string";
+		std::cout << "mmm... you need 3 arguments -file- -string- -string-";
 		return (0);
 	}
 	std::fstream in(argv[1]);
 	std::ofstream out(newFile);
 	while(getline(in, readed))
-		out << find_replace(readed, argv[2], argv[3]) << std::endl;	
+		out << find_replace(readed, argv[2], argv[3]) << std::endl;
+	in.close();
+	out.close();
 }

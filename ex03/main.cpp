@@ -16,8 +16,8 @@ int main()
 		//HumanB
 		Weapon club = Weapon("crude spiked club");
 		HumanB jim("Jim");
-		jim.setWeapon(club);
 		jim.attack();
+		jim.setWeapon(club);
 		club.setType("some other type of club");
 		jim.attack();
 	}
